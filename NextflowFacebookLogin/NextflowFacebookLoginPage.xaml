@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:NextflowFacebookLogin"
+	x:Class="NextflowFacebookLogin.NextflowFacebookLoginPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+			iOS="10,20,10,10"
+			Android="10,10,10,10"
+			/>
+	</ContentPage.Padding>
+	<StackLayout>
+		<Button Text="Login with Facebook" Clicked="Handle_Clicked"/>
+		<StackLayout Orientation="Horizontal">
+			<Image x:Name="profileImage" WidthRequest="100" HeightRequest="100"/>
+			<Label x:Name="name"/>
+
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
